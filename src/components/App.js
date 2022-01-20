@@ -1,4 +1,5 @@
 //import logo from './logo.svg';
+import Quiz from './Quiz';
 import '../App.css';
 
 function App() {
@@ -7,10 +8,11 @@ function App() {
       <header className="App-header">
         
         <p>
-          oh hi
+         
         </p>
-
+        <Quiz />
       </header>
+      
     </div>
   );
 }
