@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import Quiz from './Quiz';
-import '../App.css';
+//import '../App.css';
 import Header from './Header'
 import QuizList from './QuizList'
 import { Route, Switch } from "react-router-dom";
@@ -15,7 +15,6 @@ function App() {
         .then(data => setQuizzes(data))
 }, []);
 
-  const theWordQuiz = "quiz"
 
   return (
     <div className="App">
@@ -25,7 +24,7 @@ function App() {
 
         {quizzes.map((q)=> {return(
                   <Route path={"/"+q.id} key={q.id}>
-                  <Quiz quiz={q} />
+                  <Quiz q={q} />
                   </Route>
         )})}
 

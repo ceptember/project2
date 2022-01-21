@@ -4,7 +4,7 @@ import { Link} from "react-router-dom";
 function Header (){
     return (
         <div>
-            <h1><Link to ="/" exact>QuizFiend</Link></h1>
+            <h1><Link to ="/" exact="true">QuizFiend</Link></h1>
             <form>
                 <label>Search</label>
                 <input type="text"></input>

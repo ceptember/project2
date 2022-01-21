@@ -1,10 +1,15 @@
 import React, {useState} from 'react'; 
+import Comment from './Comment';
 
-function Quiz ({quiz}){
+function Quiz ({q}){
     // Order matters, the index of the option is the index of the corresponding result! 
    
     const [scoreSheet, setScoreSheet] = useState({})
     const [finalResult, setFinalResult] = useState("")
+    const [userName, setUserName] = useState(""); 
+    const [commentText, setCommentText] = useState("")
+
+    const [quiz, setQuiz] = useState(q); 
 
     function keepScore(index, questionNum){
 
@@ -31,6 +36,28 @@ function Quiz ({quiz}){
         console.log(quiz.results[winners[0]] + " score: " + highScore)
         setFinalResult(quiz.results[winners[0]])
     }
+
+    function handleSubmit(e){
+
+        const patchObj = {
+            comments: [...quiz.comments, {
+                comment: commentText,
+                user: userName 
+            }]
+        }
+
+        e.preventDefault(); 
+        fetch(`http://localhost:4000/quizzes/${quiz.id}`, {
+            method: 'PATCH', 
+            headers: {"Content-Type":"application/json"},
+            body: JSON.stringify(patchObj)
+        })
+            .then(resp => resp.json())
+            .then(data => setQuiz(data))
+            //data is the whole quiz 
+            //call a callback function here, defined in app, passed down from props
+
+    }
     
     return (
         <div>
@@ -51,16 +78,16 @@ function Quiz ({quiz}){
             <h2>What do you think!?</h2>
             <form>
                 <label>username </label>
-                <input type="text"></input>
+                <input type="text" value={userName} onChange={(e)=> setUserName(e.target.value)}></input>
                 <br /><br />
                 <label>comment </label>
-                <textarea />
+                <textarea onChange={(e)=>setCommentText(e.target.value)}/>
                 <br />
-                <input type="submit"/>
+                <input type="submit" onClick={handleSubmit}/>
             </form>
 
             <h2>Comments:</h2>
-            {quiz.comments.map( com => <div key={com.comment}>{com.user}<br />{com.comment}<br /><br /></div>)}
+            {quiz.comments.map( com => <Comment key={com.comment} com={com} /> )}
 
         </div>
 
@@ -71,26 +98,4 @@ function Quiz ({quiz}){
 
 export default Quiz; 
 
-/*
-Quiz logic
- 
-{
-    title: "which whatever are you?"
-    questions: [
-        {
-        question: "What is the first thing?"
-        answers: ["a-ish", "b-ish", "c-ish", "d-ish"]
-        },
-        {
-        question: "What is the second thing?"
-        answers: ["eey", "bee", "sea", "dee"]
-        },
-        {
-        question: "What is the third thing?"
-        answers: ["the a one", "the b one", "the c one", "the d one"]
-        }]
-    results : ["A", "B", "C", "D"]
 
-}
-
-*/ 
