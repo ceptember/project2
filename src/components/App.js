@@ -3,6 +3,7 @@ import Quiz from './Quiz';
 //import '../App.css';
 import Header from './Header'
 import QuizList from './QuizList'
+import SuggestionsPage from './SuggestionsPage';
 import { Route, Switch } from "react-router-dom";
 
 function App() {
@@ -29,8 +30,12 @@ function App() {
         )})}
 
 
-        <Route path="/">
+        <Route exact path="/">
         <QuizList quizzes={quizzes} />
+        </Route>
+
+        <Route path="/suggestions">
+          <SuggestionsPage />
         </Route>
 
         </Switch>

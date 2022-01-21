@@ -1,10 +1,11 @@
 import React from 'react';
-import { Link} from "react-router-dom";
+import { Link, NavLink} from "react-router-dom";
 
 function Header (){
     return (
         <div>
             <h1><Link to ="/" exact="true">QuizFiend</Link></h1>
+            <nav> <NavLink to ="/" exact="true">Home</NavLink> | <NavLink to ="/suggestions">Suggest a Quiz</NavLink></nav>
             <form>
                 <label>Search</label>
                 <input type="text"></input>
