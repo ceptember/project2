@@ -1,10 +1,13 @@
 import React from 'react'
+import { Link} from "react-router-dom";
 
-function QuizPreview(){
-    let quizzes = [1,2,3 ]
+function QuizPreview({quiz}){
+  //  let quizzes = [1,2,3 ]
     return (
         <div>
-            {quizzes.map((q)=> <div>Preview of quiz {q}</div>)}
+            <Link to={"/"+quiz.id} >
+             <div> {quiz.title}</div>
+             </Link>
           
         </div>
     )

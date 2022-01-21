@@ -1,17 +1,42 @@
-//import logo from './logo.svg';
+import React, {useState, useEffect} from 'react';
 import Quiz from './Quiz';
 import '../App.css';
 import Header from './Header'
 import QuizList from './QuizList'
+import { Route, Switch } from "react-router-dom";
 
 function App() {
+
+  const [quizzes, setQuizzes] = useState([]);
+
+  useEffect(()=>{
+    fetch('http://localhost:4000/quizzes')
+        .then(resp => resp.json())
+        .then(data => setQuizzes(data))
+}, []);
+
+  const theWordQuiz = "quiz"
+
   return (
     <div className="App">
 
         <Header />
-        <QuizList />
-        <Quiz />
-        <br /> <hr /> <br />
+        <Switch>
+
+        {quizzes.map((q)=> {return(
+                  <Route path={"/"+q.id} key={q.id}>
+                  <Quiz quiz={q} />
+                  </Route>
+        )})}
+
+
+        <Route path="/">
+        <QuizList quizzes={quizzes} />
+        </Route>
+
+        </Switch>
+        
+
 
       
       

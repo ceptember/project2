@@ -1,33 +1,8 @@
-import React, {useState, useEffect} from 'react'; 
+import React, {useState} from 'react'; 
 
-function Quiz (){
+function Quiz ({quiz}){
     // Order matters, the index of the option is the index of the corresponding result! 
-    let quiz = {
-        title: "Which whatever are you?",
-        questions: [
-            {
-            question: "What is the first thing?",
-            answers: ["a-ish", "b-ish", "c-ish", "d-ish"]
-            },
-            {
-            question: "What is the second thing?",
-            answers: ["eey", "bee", "sea", "dee"]
-            },
-            {
-            question: "What is the third thing?",
-            answers: ["the a one", "the b one", "the c one", "the d one"]
-            }],
-        results : ["A", "B", "C", "D"],
-        comments : [{comment: "OMG so accurate!", user: "user1"}, {comment: "Wow that is totally me!!", user: "user2"}, {comment: "Uh... no.", user: "user3"}]
-    }
-
-    useEffect(()=>{
-        fetch('http://localhost:4000/quizzes')
-            .then(resp => resp.json())
-            .then(data => console.log(data[0].title))
-    });
-
-
+   
     const [scoreSheet, setScoreSheet] = useState({})
     const [finalResult, setFinalResult] = useState("")
 
