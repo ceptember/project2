@@ -1,9 +1,9 @@
-import React, {useState} from 'react'; 
+import React, {useState, useEffect} from 'react'; 
 
 function Quiz (){
     // Order matters, the index of the option is the index of the corresponding result! 
     let quiz = {
-        title: "which whatever are you?",
+        title: "Which whatever are you?",
         questions: [
             {
             question: "What is the first thing?",
@@ -17,10 +17,19 @@ function Quiz (){
             question: "What is the third thing?",
             answers: ["the a one", "the b one", "the c one", "the d one"]
             }],
-        results : ["A", "B", "C", "D"]
+        results : ["A", "B", "C", "D"],
+        comments : [{comment: "OMG so accurate!", user: "user1"}, {comment: "Wow that is totally me!!", user: "user2"}, {comment: "Uh... no.", user: "user3"}]
     }
 
+    useEffect(()=>{
+        fetch('http://localhost:4000/quizzes')
+            .then(resp => resp.json())
+            .then(data => console.log(data[0].title))
+    });
+
+
     const [scoreSheet, setScoreSheet] = useState({})
+    const [finalResult, setFinalResult] = useState("")
 
     function keepScore(index, questionNum){
 
@@ -45,11 +54,12 @@ function Quiz (){
         const highScore = Math.max(...Object.values(finalScore))
         let winners = Object.keys(finalScore).filter( x => finalScore[x] == highScore)
         console.log(quiz.results[winners[0]] + " score: " + highScore)
+        setFinalResult(quiz.results[winners[0]])
     }
     
     return (
         <div>
-            QUIZ
+            <h2>{quiz.title}</h2>
 
 
             {quiz.questions.map( x => { 
@@ -60,7 +70,27 @@ function Quiz (){
                         )
             }) }
 
+
+            <h2>Your Result:</h2>
+            <h3>{finalResult}</h3>
+            <h2>What do you think!?</h2>
+            <form>
+                <label>username </label>
+                <input type="text"></input>
+                <br /><br />
+                <label>comment </label>
+                <textarea />
+                <br />
+                <input type="submit"/>
+            </form>
+
+            <h2>Comments:</h2>
+            {quiz.comments.map( com => <div key={com.comment}>{com.user}<br />{com.comment}<br /><br /></div>)}
+
         </div>
+
+
+
     )
 }
 

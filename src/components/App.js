@@ -1,17 +1,19 @@
 //import logo from './logo.svg';
 import Quiz from './Quiz';
 import '../App.css';
+import Header from './Header'
+import QuizList from './QuizList'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        
-        <p>
-         
-        </p>
+
+        <Header />
+        <QuizList />
         <Quiz />
-      </header>
+        <br /> <hr /> <br />
+
+      
       
     </div>
   );
