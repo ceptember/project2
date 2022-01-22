@@ -3,6 +3,7 @@ import Quiz from './Quiz';
 import Header from './Header'
 import QuizList from './QuizList'
 import SuggestionsPage from './SuggestionsPage';
+import Search from './Search.js';
 import { Route, Switch } from "react-router-dom";
 
 function App() {
@@ -27,7 +28,7 @@ function App() {
   return (
     <div className="App">
 
-        <Header onSearch={searchHandler}/>
+        <Header />
         <Switch>
 
         {quizzesToShow.map((q)=> {return(
@@ -38,6 +39,7 @@ function App() {
 
           {/* home page shows list of quizzes*/}
         <Route exact path="/">
+        <Search  onSearch={searchHandler}/>  
         <QuizList quizzes={quizzesToShow} />
         </Route>
 
@@ -60,10 +62,9 @@ export default App;
 /*
 
 THINGS THAT DON'T WORK YET 
---Still need to wire up the search bar
+-- Remove the search bar from Quiz pages
 -- Comment form - adds to the DOM on submit, persists on refresh. BUT it doesn't persist if you 
     navigate to another component then navigate back 
--- disable each question after being answered 
 --Need to add styling
 
 

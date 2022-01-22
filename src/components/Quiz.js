@@ -14,7 +14,7 @@ function Quiz ({q}){
     const [questionsCompleted, setQuestionsCompleted] = useState(-1);
 
     function keepScore(index, questionNum){
-        if (questionsCompleted < questionNum){
+        if (questionNum === questionsCompleted+1){
             console.log(quiz.results[index])
             const scoreCopy = {...scoreSheet}
     
