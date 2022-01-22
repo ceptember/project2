@@ -11,23 +11,28 @@ function Quiz ({q}){
 
     const [quiz, setQuiz] = useState(q); 
 
+    const [questionsCompleted, setQuestionsCompleted] = useState(-1);
+
     function keepScore(index, questionNum){
+        if (questionsCompleted < questionNum){
+            console.log(quiz.results[index])
+            const scoreCopy = {...scoreSheet}
+    
+            if (Object.keys(scoreCopy).includes(index.toString())){
+                scoreCopy[index]++
+            }
+            else {
+                scoreCopy[index] = 1
+            }
 
-        console.log(quiz.results[index])
-        const scoreCopy = {...scoreSheet}
- 
-        if (Object.keys(scoreCopy).includes(index.toString())){
-            scoreCopy[index]++
-        }
-        else {
-            scoreCopy[index] = 1
-        }
+            setScoreSheet(scoreCopy)
 
-        setScoreSheet(scoreCopy)
-
-        if (questionNum == (quiz.questions.length-1).toString()){
-            addScore(scoreCopy)
+            if (questionNum == (quiz.questions.length-1).toString()){
+                addScore(scoreCopy)
+            }
+            setQuestionsCompleted(questionsCompleted + 1)   
         }
+        
     }
 
     function addScore(finalScore){
@@ -65,7 +70,7 @@ function Quiz ({q}){
 
             {quiz.questions.map( x => { 
                 return  (  <div key={x.question}>
-                                <div onClick={()=> console.log(quiz.questions.indexOf(x))}> {x.question} </div>
+                                <div > {x.question} </div>
                                 <div> {x.answers.map( y => <div key={y} onClick={ () => keepScore((x.answers.indexOf(y)), quiz.questions.indexOf(x)) }> {y} </div>)}  </div>
                             </div>
                         )
