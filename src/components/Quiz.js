@@ -54,8 +54,7 @@ function Quiz ({q}){
         })
             .then(resp => resp.json())
             .then(data => setQuiz(data))
-            //data is the whole quiz 
-            //call a callback function here, defined in app, passed down from props
+
 
     }
     
@@ -76,14 +75,14 @@ function Quiz ({q}){
             <h2>Your Result:</h2>
             <h3>{finalResult}</h3>
             <h2>What do you think!?</h2>
-            <form>
+            <form onSubmit={handleSubmit}>
                 <label>username </label>
                 <input type="text" value={userName} onChange={(e)=> setUserName(e.target.value)}></input>
                 <br /><br />
                 <label>comment </label>
                 <textarea onChange={(e)=>setCommentText(e.target.value)}/>
                 <br />
-                <input type="submit" onClick={handleSubmit}/>
+                <input type="submit" />
             </form>
 
             <h2>Comments:</h2>

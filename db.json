@@ -66,6 +66,10 @@
         {
           "comment": "zxcv",
           "user": "zzz"
+        },
+        {
+          "comment": "tralalala",
+          "user": "lalala"
         }
       ]
     },
@@ -123,10 +127,48 @@
         {
           "comment": "comment on another quiz",
           "user": "user"
+        },
+        {
+          "comment": "comment!!",
+          "user": "me"
+        },
+        {
+          "comment": "b",
+          "user": "a"
         }
       ]
     }
   ],
-
-  "suggestions": [{"user":"suggestion"}]
+  "suggestions": [
+    {
+      "id": 1,
+      "user": "user1",
+      "suggestion": "suggestion text"
+    },
+    {
+      "user": "lalala",
+      "suggestion": "tralala",
+      "id": 2
+    },
+    {
+      "user": "aaa",
+      "suggestion": "bbb",
+      "id": 3
+    },
+    {
+      "user": "ccc",
+      "suggestion": "ddd",
+      "id": 4
+    },
+    {
+      "user": "eee",
+      "suggestion": "fff",
+      "id": 5
+    },
+    {
+      "user": "blargh",
+      "suggestion": "moar blargh",
+      "id": 6
+    }
+  ]
 }
