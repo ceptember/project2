@@ -4,6 +4,7 @@ import Header from './Header'
 import QuizList from './QuizList'
 import SuggestionsPage from './SuggestionsPage';
 import Search from './Search.js';
+import Footer from './Footer.js'
 import { Route, Switch } from "react-router-dom";
 //import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -49,6 +50,7 @@ function App() {
         </Route>
 
         </Switch>
+        <Footer />
     
     </div>
   );
@@ -61,8 +63,7 @@ export default App;
 THINGS THAT DON'T WORK YET 
 -- Comment form - adds to the DOM on submit, persists on refresh. BUT it doesn't persist if you 
     navigate to another component then navigate back 
---  add photos for quiz title and result
---Need to add styling
+--when you search, go to quiz, and click back to go home only the searched results are there
 
 
 

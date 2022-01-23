@@ -1,3 +1,7 @@
+/* 
+****** GLOBAL *******
+*/
+
 body {
   margin: 0;
   padding-left: 10px; 
@@ -13,16 +17,6 @@ body {
 
   text-decoration: none; 
  
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-a {
-  color:#04C4D9;
-  text-decoration: none; 
 }
 
 h1 {
@@ -46,6 +40,11 @@ h3 {
   color: #04C4D9
 }
 
+a {
+  color:#04C4D9;
+  text-decoration: none; 
+}
+
 .link { 
   text-decoration: none; 
   display: inline-block;
@@ -55,6 +54,54 @@ h3 {
 
 }
 
+/*
+***** COMPONENTS ******
+*/
+
+.quiz-preview {
+  border: 1px solid white; 
+  border-radius: 5px;
+  margin: 5px;
+  min-height: 150px; 
+  line-height: 150px;
+  width: 500px; 
+  font-size: 20px; 
+  text-align:center; 
+}
+
+#header {
+  min-height: 100px; 
+  margin-top: 0px;
+  padding: 20px; 
+  background-color: #F2522E;
+  color: white; 
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+#footer{
+  min-height: 20px; 
+  padding: 20px; 
+  background-color: #F2522E;
+  color: white; 
+  border-radius: 5px;
+}
+
+#search {
+  background-color: #F2CD5E;
+  border-bottom-left-radius: 5px; 
+  border-bottom-right-radius: 5px; 
+  padding-left: 20px; 
+  padding-top: 5px; 
+  padding-bottom: 5px;
+  color: #F2522E; 
+}
+
+
+/*
+***** EACH TYPE OF BUTTON IN THE QUIZ ******
+*/
+
 .question-answer-holder{
   clear: both;
 }
@@ -63,7 +110,7 @@ h3 {
   width: 100px; 
   min-height: 100px; 
   margin: 5px; 
-  background-color: #04C4D9; 
+  background-color: #04C4D933; 
   color: #F2F2F2; 
   float: left; 
 }
@@ -74,11 +121,20 @@ h3 {
   margin: 5px; 
   color: #F2F2F2; 
   float: left; 
-  background-color: #04C4D933; 
+  background-color: #04C4D9; 
 }
 
-.other-questions:active{
+.current-question:active{
   background-color:#F2137B
+}
+
+.quiz-question {
+  min-height: 100px; 
+  width: 450px; 
+  background-color: #F2CD5E; 
+  border-radius: 5px; 
+  margin-top: 15px; 
+  
 }
 
 .results-div{
@@ -89,32 +145,7 @@ h3 {
   border: 1px solid white; 
 }
 
-.quiz-preview {
-  border: 1px solid white; 
-  border-radius: 5px;
-  margin: 5px;
-  min-height: 150px; 
-  line-height: 150px;
-  width: 300px; 
-  font-size: 20px; 
-  text-align:center; 
-}
 
-#header {
-  min-height: 150px; 
-  margin-top: 0px;
-  padding: 20px; 
-  background-color: #F2522E;
-  color: white; 
-  border-top-right-radius: 5px;
-  border-top-left-radius: 5px;
-}
-
-#search {
-  background-color: #F2CD5E;
-  border-bottom-left-radius: 5px; 
-  border-bottom-right-radius: 5px; 
-}
 
 /*
 COLORS

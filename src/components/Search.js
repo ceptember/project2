@@ -13,7 +13,7 @@ function Search({onSearch}){
     return (
         <div id="search">
                 <form>
-                <label>Search</label>
+                <label>Search for a quiz </label>
                 <input type="text" value={searchTerm} onChange={handleSearch}></input>
             </form>
         </div>
