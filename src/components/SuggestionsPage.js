@@ -38,11 +38,15 @@ function SuggestionsPage(){
 
         <div> 
             <h2>Have an idea for a new quiz? Let us know! </h2>
-            <form onSubmit={handleSug}>
-                <label>Username</label>
-                <input type="text" value={userName} onChange={(e)=>setUserName(e.target.value)}/>  
-                <label>Comment</label> 
-                <textarea value={sugText} onChange={(e)=>setSugText(e.target.value)}></textarea>
+            <form id="suggest-form" onSubmit={handleSug}>
+                <label>Username: </label>
+                <br />
+                <input type="text" value={userName} onChange={(e)=>setUserName(e.target.value)}/> 
+                <br /> 
+                <label>Comment: </label> 
+                <br />
+                <textarea id="suggest-textbox" value={sugText} onChange={(e)=>setSugText(e.target.value)}></textarea>
+                <br />
                 <input type ="submit"></input>
             </form>
 

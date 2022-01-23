@@ -2,10 +2,9 @@ import React from "react";
 
 function Suggestion ({sug}){
     return (
-        <div> 
-            {sug.user}
-            <br />
-            {sug.suggestion}
+        <div className="suggestion"> 
+            <h4>{sug.user}</h4>
+            <p>{sug.suggestion}</p>
             <br /><br />
         </div>
     )

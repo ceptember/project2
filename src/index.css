@@ -187,7 +187,35 @@ background-color: #ffffffcc;
   background-color:#F2137B
 }
 
+/*
+***** SUGGESTION PAGE **** 
+*/
 
+#suggest-form{
+  background-color: #7FBF50;
+  width: 300px; 
+  padding: 20px; 
+  border: 1px solid black; 
+  border-radius: 5px; 
+  margin: auto
+}
+
+#suggest-textbox{
+  width: 200px; 
+  height: 150px; 
+}
+
+.suggestion{
+  width: 300px; 
+  padding: 20px; 
+  border: 1px solid black; 
+  border-radius: 5px; 
+  margin: auto; 
+  margin-top: 10px; 
+  margin-bottom: 10px; 
+  text-align: center; 
+  background-color: #fff;
+}
 
 
 /*
