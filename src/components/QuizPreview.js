@@ -2,11 +2,15 @@ import React from 'react'
 import { Link} from "react-router-dom";
 
 function QuizPreview({quiz}){
-  //  let quizzes = [1,2,3 ]
+  const style = {
+    backgroundImage: 'url(' + quiz.image + ')',
+    backgroundSize: '100%',
+  };
     return (
-        <div>
-            <Link to={"/"+quiz.id} >
-             <div> {quiz.title}</div>
+
+        <div >
+            <Link className='link' to={"/"+quiz.id} >
+             <div className="quiz-preview" style={style}> {quiz.title}</div>
              </Link>
           
         </div>
@@ -14,3 +18,6 @@ function QuizPreview({quiz}){
 }
 
 export default QuizPreview; 
+
+
+

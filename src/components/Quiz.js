@@ -5,7 +5,7 @@ function Quiz ({q}){
     // Order matters, the index of the option is the index of the corresponding result! 
    
     const [scoreSheet, setScoreSheet] = useState({})
-    const [finalResult, setFinalResult] = useState("")
+    const [finalResult, setFinalResult] = useState({}) //change to obj
     const [userName, setUserName] = useState(""); 
     const [commentText, setCommentText] = useState("")
 
@@ -32,16 +32,15 @@ function Quiz ({q}){
             }
             setQuestionsCompleted(questionsCompleted + 1)   
         }
-        
     }
 
     function addScore(finalScore){
         const highScore = Math.max(...Object.values(finalScore))
         let winners = Object.keys(finalScore).filter( x => finalScore[x] == highScore)
-        console.log(quiz.results[winners[0]] + " score: " + highScore)
-        setFinalResult(quiz.results[winners[0]])
+        setFinalResult(quiz.results[winners[0]]) //
     }
 
+    //might need to move this up to parent
     function handleSubmit(e){
 
         const patchObj = {
@@ -59,8 +58,6 @@ function Quiz ({q}){
         })
             .then(resp => resp.json())
             .then(data => setQuiz(data))
-
-
     }
     
     return (
@@ -69,16 +66,20 @@ function Quiz ({q}){
 
 
             {quiz.questions.map( x => { 
-                return  (  <div key={x.question}>
+                return  (  <div key={x.question} className="question-answer-holder">
                                 <div > {x.question} </div>
-                                <div> {x.answers.map( y => <div key={y} onClick={ () => keepScore((x.answers.indexOf(y)), quiz.questions.indexOf(x)) }> {y} </div>)}  </div>
+                                <div> {x.answers.map( y => <div className= { (quiz.questions.indexOf(x))==(questionsCompleted +1) ? "other-questions" : "current-question"} key={y} onClick={ () => keepScore((x.answers.indexOf(y)), quiz.questions.indexOf(x)) }> {y} </div>)}  </div>
                             </div>
                         )
             }) }
 
 
+            <div className='results-div' style={ {backgroundImage: 'url(' + finalResult.image + ')',backgroundSize: '100%'}}>
             <h2>Your Result:</h2>
-            <h3>{finalResult}</h3>
+            <h3>{finalResult.result}</h3>
+            <p>{finalResult.text}</p>
+            </div>
+
             <h2>What do you think!?</h2>
             <form onSubmit={handleSubmit}>
                 <label>username </label>

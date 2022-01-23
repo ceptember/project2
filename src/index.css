@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  padding-left: 10px; 
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -7,9 +8,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  background-color: #292929;
-  color:#F2F2F2 ;
+  color: #292929;
+  background-color:#F2F2F2 ;
 
+  text-decoration: none; 
+ 
 }
 
 code {
@@ -18,23 +21,112 @@ code {
 }
 
 a {
-  color:#66BCF2;
+  color:#04C4D9;
+  text-decoration: none; 
 }
 
- h1, h2 {
-    color:#F2CD5C;
+h1 {
+  font-size: 50pt; 
+}
+
+ h1 a {
+    color:white;
+     
+  }
+
+  #header a {
+    color:white;
+  }
+
+h2 {
+    color:#04C4D9;
   }
 
 h3 {
-  color: #F2785C
+  color: #04C4D9
+}
+
+.link { 
+  text-decoration: none; 
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+  color: #000000
+
+}
+
+.question-answer-holder{
+  clear: both;
+}
+
+.other-questions {
+  width: 100px; 
+  min-height: 100px; 
+  margin: 5px; 
+  background-color: #04C4D9; 
+  color: #F2F2F2; 
+  float: left; 
+}
+
+.current-question {
+  width: 100px; 
+  min-height: 100px; 
+  margin: 5px; 
+  color: #F2F2F2; 
+  float: left; 
+  background-color: #04C4D933; 
+}
+
+.other-questions:active{
+  background-color:#F2137B
+}
+
+.results-div{
+  clear:both;
+  width: 400px; 
+  height: 250px; 
+  text-align:center;
+  border: 1px solid white; 
+}
+
+.quiz-preview {
+  border: 1px solid white; 
+  border-radius: 5px;
+  margin: 5px;
+  min-height: 150px; 
+  line-height: 150px;
+  width: 300px; 
+  font-size: 20px; 
+  text-align:center; 
+}
+
+#header {
+  min-height: 150px; 
+  margin-top: 0px;
+  padding: 20px; 
+  background-color: #F2522E;
+  color: white; 
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+#search {
+  background-color: #F2CD5E;
+  border-bottom-left-radius: 5px; 
+  border-bottom-right-radius: 5px; 
 }
 
 /*
 COLORS
 
-#66BCF2
-#F2CD5C
-#F2A35E
-#F2785C
+pink #F2137B
+teal #04C4D9
+lime #7FBF50
+yellow #F2CD5E
+orange #F2522E
+
 
 */
+
+
+
