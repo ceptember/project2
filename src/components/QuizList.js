@@ -7,8 +7,8 @@ function QuizList ({quizzes}){
     
     return(
         
-        <div>
-            <h2>Quizzes</h2>
+        <div id="quiz-list">
+            <h2>Take a Quiz</h2>
              {quizzes.map( (q)=> <div key={q.id}> <QuizPreview  quiz={q}/> </div>)}
             
         </div>

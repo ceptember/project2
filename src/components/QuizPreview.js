@@ -10,7 +10,11 @@ function QuizPreview({quiz}){
 
         <div >
             <Link className='link' to={"/"+quiz.id} >
-             <div className="quiz-preview" style={style}> {quiz.title}</div>
+              <div className="quiz-preview" style={style}>
+                <div className="preview-textbox">
+                  <h3>{quiz.title}</h3>
+                </div> 
+              </div>
              </Link>
           
         </div>

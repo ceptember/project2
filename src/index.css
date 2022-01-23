@@ -34,10 +34,15 @@ h1 {
 
 h2 {
     color:#04C4D9;
+    font-size: 36pt; 
   }
 
+
+
 h3 {
-  color: #04C4D9
+  color: #04C4D9;
+  margin-top:0px; 
+
 }
 
 a {
@@ -55,19 +60,37 @@ a {
 }
 
 /*
-***** COMPONENTS ******
+***** FOR QUIZ LIST AND ITS CHILD QUIZ PREVIEW ******
 */
+
+#quiz-list{
+ 
+  text-align: center; 
+}
 
 .quiz-preview {
   border: 1px solid white; 
   border-radius: 5px;
-  margin: 5px;
-  min-height: 150px; 
-  line-height: 150px;
+  margin: 15px;
+  height: 150px; 
   width: 500px; 
   font-size: 20px; 
   text-align:center; 
 }
+
+.preview-textbox{
+height: 130px; 
+line-height: 130px;
+margin-top: 10px; 
+width: 480px; 
+margin-left: 10px;    
+background-color: #ffffffcc; 
+}
+
+
+/*
+****** HEADER, FOOTER, SEARCH BAR COMPONENTS
+*/
 
 #header {
   min-height: 100px; 
@@ -99,23 +122,59 @@ a {
 
 
 /*
-***** EACH TYPE OF BUTTON IN THE QUIZ ******
+***** FOR QUIZ COMPONENT AND EVERYTHING INSIDE IT ******
 */
+
+#quiz-component {
+  width: 75%;
+  margin: auto;
+  text-align: center; 
+}
+
+
 
 .question-answer-holder{
   clear: both;
+  width: 350px;
+  margin: auto;
+
+}
+
+.results-div{
+  clear:both;
+  width: 350px;
+  margin: auto;
+  height: 250px; 
+  text-align:center;
+  border: 1px solid white; 
 }
 
 .other-questions {
+  min-height: 100px; 
+  width: 100%; 
+  background-color: #04C4D966;
+  border-radius: 5px; 
+  margin-top: 15px; 
+}
+
+.current-question {
+  min-height: 100px; 
+  width: 100%; 
+  background-color: #04C4D9;
+  border-radius: 5px; 
+  margin-top: 15px; 
+}
+
+.other-questions-options {
   width: 100px; 
   min-height: 100px; 
   margin: 5px; 
-  background-color: #04C4D933; 
+  background-color: #04C4D966; 
   color: #F2F2F2; 
   float: left; 
 }
 
-.current-question {
+.current-question-options {
   width: 100px; 
   min-height: 100px; 
   margin: 5px; 
@@ -124,26 +183,10 @@ a {
   background-color: #04C4D9; 
 }
 
-.current-question:active{
+.current-question-options:active{
   background-color:#F2137B
 }
 
-.quiz-question {
-  min-height: 100px; 
-  width: 450px; 
-  background-color: #F2CD5E; 
-  border-radius: 5px; 
-  margin-top: 15px; 
-  
-}
-
-.results-div{
-  clear:both;
-  width: 400px; 
-  height: 250px; 
-  text-align:center;
-  border: 1px solid white; 
-}
 
 
 

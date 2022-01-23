@@ -61,14 +61,14 @@ function Quiz ({q}){
     }
     
     return (
-        <div>
+        <div id="quiz-component">
             <h2>{quiz.title}</h2>
 
 
             {quiz.questions.map( x => { 
                 return  (  <div key={x.question} className="question-answer-holder">
-                                <div class="quiz-question" > {x.question} </div>
-                                <div> {x.answers.map( y => <div className= { (quiz.questions.indexOf(x))==(questionsCompleted +1) ?   "current-question" : "other-questions"} key={y} onClick={ () => keepScore((x.answers.indexOf(y)), quiz.questions.indexOf(x)) }> {y} </div>)}  </div>
+                                <div className={ (quiz.questions.indexOf(x))==(questionsCompleted +1) ?   "current-question" : "other-questions"} > {x.question} </div>
+                                <div> {x.answers.map( y => <div className= { (quiz.questions.indexOf(x))==(questionsCompleted +1) ?   "current-question-options" : "other-questions-options"} key={y} onClick={ () => keepScore((x.answers.indexOf(y)), quiz.questions.indexOf(x)) }> {y} </div>)}  </div>
                             </div>
                         )
             }) }
