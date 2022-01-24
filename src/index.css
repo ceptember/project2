@@ -98,8 +98,7 @@ background-color: #ffffffcc;
   padding: 20px; 
   background-color: #F2522E;
   color: white; 
-  border-top-right-radius: 5px;
-  border-top-left-radius: 5px;
+  border-radius: 5px;
 }
 
 #footer{
@@ -128,6 +127,8 @@ background-color: #ffffffcc;
   padding-top: 5px; 
   padding-bottom: 5px;
   color: #F2522E; 
+  height: 25px; 
+  margin-top: -15px; 
 }
 
 
