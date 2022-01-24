@@ -81,91 +81,67 @@
         {
           "comment": "Uh... no.",
           "user": "user3"
-        },
-        {
-          "comment": "test comment",
-          "user": "test"
-        },
-        {
-          "comment": "test!",
-          "user": "test"
-        },
-        {
-          "comment": "my comment",
-          "user": "my name"
-        },
-        {
-          "comment": "zxcv",
-          "user": "zzz"
-        },
-        {
-          "comment": "tralalala",
-          "user": "lalala"
-        },
-        {
-          "comment": "comment!!!!!",
-          "user": "me"
         }
       ]
     },
     {
       "id": 2,
-      "title": "Another Quiz?",
-      "image": "https://images.unsplash.com/photo-1530064161350-7824b8cdeee9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-      "imagecredit": "",
+      "title": "Which animal represents your programming style?",
+      "image": "https://images.unsplash.com/photo-1515764126024-d1a272b7bf72?ixlib=rb-1.2.1",
+      "imagecredit": "ozgut",
       "questions": [
         {
-          "question": "What is the first thing?",
+          "question": "When do you get your best ideas?",
           "answers": [
-            "a-ish",
-            "b-ish",
-            "c-ish",
-            "d-ish"
+            "They wake me up in the middle of the night",
+            "First thing in the early morning",
+            "Mid-day once I have a chance to warm up",
+            "Late at night after everyone goes to bed"
           ]
         },
         {
-          "question": "What is the second thing?",
+          "question": "What do you excel at?",
           "answers": [
-            "eey",
-            "bee",
-            "sea",
-            "dee"
+            "Intelligence",
+            "Leadership",
+            "Well-roundedness",
+            "Creativity"
           ]
         },
         {
-          "question": "What is the third thing?",
+          "question": "What is your energy like?",
           "answers": [
-            "the a one",
-            "the b one",
-            "the c one",
-            "the d one"
+            "Very energetic in spontaneous bursts",
+            "I start the day with a lot of energy and wind down in the evening",
+            "My energy is in tune with the sunlight",
+            "I have a slow start but have high energy through the evening hours"
           ]
         }
       ],
       "results": [
         {
-          "result": "A",
-          "text": "result text",
-          "image": "https://s3-alpha.figma.com/hub/file/948140848/1f4d8ea7-e9d9-48b7-b70c-819482fb10fb-cover.png",
-          "credit":""
+          "result": "Dolphin",
+          "text": "You are highly intellegent, yet restless. You think differently and have the makings of a great inventor. You may be a perfectionist, but try not to get too upset when others don't live up to your standards.",
+          "image": "https://images.unsplash.com/photo-1570481662006-a3a1374699e8",
+          "credit":"aberkecz"
         },
         {
-          "result": "B",
-          "text": "result text",
-          "image": "https://s3-alpha.figma.com/hub/file/948140848/1f4d8ea7-e9d9-48b7-b70c-819482fb10fb-cover.png",
-          "credit":""
+          "result": "Lion",
+          "text": "You are a born leader and the first one to arrive at work to rally your team. Remember to pace yourself to avoid burnout.",
+          "image": "https://images.unsplash.com/photo-1552410260-0fd9b577afa6",
+          "credit":"mikabr"
         },
         {
-          "result": "C",
-          "text": "result text",
-          "image": "https://s3-alpha.figma.com/hub/file/948140848/1f4d8ea7-e9d9-48b7-b70c-819482fb10fb-cover.png",
-          "credit":""
+          "result": "Bear",
+          "text": "You are well-rounded and pretty good at many different things. You're also an easygoing, agreeable member of your team, as long as you have enough rest and self-care. Remember not to neglect these things!",
+          "image": "https://images.unsplash.com/photo-1568162603664-fcd658421851",
+          "credit":"binkabonka"
         },
         {
-          "result": "D",
-          "text": "result text",
-          "image": "https://s3-alpha.figma.com/hub/file/948140848/1f4d8ea7-e9d9-48b7-b70c-819482fb10fb-cover.png",
-          "credit":""
+          "result": "Wolf",
+          "text": "Smart, creative, and independent, you come up with some of the best ideas for your team. You do your best work alone, ususally at night, but don't forget to make time for others once in a while!",
+          "image": "https://images.unsplash.com/photo-1607350999170-b893fef057ea",
+          "credit":"miloweiler"
         }
       ],
       "comments": [
