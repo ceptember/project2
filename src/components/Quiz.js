@@ -1,5 +1,6 @@
 import React, {useState} from 'react'; 
 import Comment from './Comment';
+import Result from './Result'
 
 function Quiz ({q}){
     // Order matters, the index of the option is the index of the corresponding result! 
@@ -74,13 +75,10 @@ function Quiz ({q}){
                         )
             }) }
 
+            { finalResult.result ? <Result finalResult={finalResult}/> : ""}    
 
-            <div className='results-div' style={ {backgroundImage: 'url(' + finalResult.image + ')',backgroundSize: '100%'}}>
-            <h2>Your Result:</h2>
-            <h3>{finalResult.result}</h3>
-            <p>{finalResult.text}</p>
-            </div>
-
+            <br />
+            <div id="comments-section">
             <h2>What do you think!?</h2>
             <form onSubmit={handleSubmit}>
                 <label>username </label>
@@ -94,7 +92,7 @@ function Quiz ({q}){
 
             <h2>Comments:</h2>
             {quiz.comments.map( com => <Comment key={com.comment} com={com} /> )}
-
+            </div>
         </div>
 
 

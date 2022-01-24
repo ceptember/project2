@@ -197,6 +197,10 @@ background-color: #ffffffcc;
   background-color:#F2137B
 }
 
+
+#comments-section {
+  clear: both; 
+}
 /*
 ***** SUGGESTION PAGE **** 
 */
