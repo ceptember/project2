@@ -3,7 +3,10 @@ import { Link} from "react-router-dom";
 
 function QuizPreview({quiz}){
   const style = {
-    backgroundImage: 'url(' + quiz.image + ')',
+   backgroundImage: 'url(' + quiz.image + ')',
+   
+   // **** Why doesn't this filepath work?? 
+   //backgroundImage: 'url(/src/img/NYC.jpg)',
     backgroundSize: '100%',
   };
     return (
@@ -13,8 +16,9 @@ function QuizPreview({quiz}){
               <div className="quiz-preview" style={style}>
                 <div className="preview-textbox">
                   <h3>{quiz.title}</h3>
-                  <p className="img-credit">{quiz.imagecredit}</p>
+                  
                 </div> 
+                <span className="img-credit">{quiz.imagecredit}</span>
               </div>
              </Link>
           

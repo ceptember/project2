@@ -6,7 +6,7 @@ function Result ({finalResult}) {
         <h2>Your Result:</h2>
         <h3>{finalResult.result}</h3>
         <p>{finalResult.text}</p>
-        <p className="img-credit">{finalResult.credit}</p>
+        <p className="img-credit">Photo by <a target="_blank" href={"https://unsplash.com/@"+finalResult.credit}> @{finalResult.credit} for Unsplash</a></p>
         </div>
     )
 
