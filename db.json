@@ -4,6 +4,7 @@
       "id": 1,
       "title": "Which whatever are you?",
       "image": "https://images.unsplash.com/photo-1613769049987-b31b641f25b1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=867&q=80",
+      "imagecredit" : "",
       "questions": [
         {
           "question": "What is the first thing?",
@@ -37,22 +38,26 @@
         {
           "result": "A",
           "text": "result text",
-          "image": "https://s3-alpha.figma.com/hub/file/948140848/1f4d8ea7-e9d9-48b7-b70c-819482fb10fb-cover.png"
+          "image": "https://s3-alpha.figma.com/hub/file/948140848/1f4d8ea7-e9d9-48b7-b70c-819482fb10fb-cover.png",
+          "credit": ""
         },
         {
           "result": "B",
           "text": "result text",
-          "image": "https://s3-alpha.figma.com/hub/file/948140848/1f4d8ea7-e9d9-48b7-b70c-819482fb10fb-cover.png"
+          "image": "https://s3-alpha.figma.com/hub/file/948140848/1f4d8ea7-e9d9-48b7-b70c-819482fb10fb-cover.png",
+          "credit": ""
         },
         {
           "result": "C",
           "text": "result text",
-          "image": "https://s3-alpha.figma.com/hub/file/948140848/1f4d8ea7-e9d9-48b7-b70c-819482fb10fb-cover.png"
+          "image": "https://s3-alpha.figma.com/hub/file/948140848/1f4d8ea7-e9d9-48b7-b70c-819482fb10fb-cover.png",
+          "credit":""
         },
         {
           "result": "D",
           "text": "result text",
-          "image": "https://s3-alpha.figma.com/hub/file/948140848/1f4d8ea7-e9d9-48b7-b70c-819482fb10fb-cover.png"
+          "image": "https://s3-alpha.figma.com/hub/file/948140848/1f4d8ea7-e9d9-48b7-b70c-819482fb10fb-cover.png",
+          "credit":""
         }
       ],
       "comments": [
@@ -98,6 +103,7 @@
       "id": 2,
       "title": "Another Quiz?",
       "image": "https://images.unsplash.com/photo-1530064161350-7824b8cdeee9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      "imagecredit": "",
       "questions": [
         {
           "question": "What is the first thing?",
@@ -131,22 +137,26 @@
         {
           "result": "A",
           "text": "result text",
-          "image": "https://s3-alpha.figma.com/hub/file/948140848/1f4d8ea7-e9d9-48b7-b70c-819482fb10fb-cover.png"
+          "image": "https://s3-alpha.figma.com/hub/file/948140848/1f4d8ea7-e9d9-48b7-b70c-819482fb10fb-cover.png",
+          "credit":""
         },
         {
           "result": "B",
           "text": "result text",
-          "image": "https://s3-alpha.figma.com/hub/file/948140848/1f4d8ea7-e9d9-48b7-b70c-819482fb10fb-cover.png"
+          "image": "https://s3-alpha.figma.com/hub/file/948140848/1f4d8ea7-e9d9-48b7-b70c-819482fb10fb-cover.png",
+          "credit":""
         },
         {
           "result": "C",
           "text": "result text",
-          "image": "https://s3-alpha.figma.com/hub/file/948140848/1f4d8ea7-e9d9-48b7-b70c-819482fb10fb-cover.png"
+          "image": "https://s3-alpha.figma.com/hub/file/948140848/1f4d8ea7-e9d9-48b7-b70c-819482fb10fb-cover.png",
+          "credit":""
         },
         {
           "result": "D",
           "text": "result text",
-          "image": "https://s3-alpha.figma.com/hub/file/948140848/1f4d8ea7-e9d9-48b7-b70c-819482fb10fb-cover.png"
+          "image": "https://s3-alpha.figma.com/hub/file/948140848/1f4d8ea7-e9d9-48b7-b70c-819482fb10fb-cover.png",
+          "credit":""
         }
       ],
       "comments": [
@@ -188,6 +198,7 @@
       "id": 3,
       "title": "More Quiz fun?",
       "image": "https://images.unsplash.com/photo-1613769049987-b31b641f25b1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=867&q=80",
+      "imagecredit": "",
       "questions": [
         {
           "question": "What is the first thing?",
@@ -221,22 +232,26 @@
         {
           "result": "A",
           "text": "result text",
-          "image": "https://s3-alpha.figma.com/hub/file/948140848/1f4d8ea7-e9d9-48b7-b70c-819482fb10fb-cover.png"
+          "image": "https://s3-alpha.figma.com/hub/file/948140848/1f4d8ea7-e9d9-48b7-b70c-819482fb10fb-cover.png",
+          "credit": ""
         },
         {
           "result": "B",
           "text": "result text",
-          "image": "https://s3-alpha.figma.com/hub/file/948140848/1f4d8ea7-e9d9-48b7-b70c-819482fb10fb-cover.png"
+          "image": "https://s3-alpha.figma.com/hub/file/948140848/1f4d8ea7-e9d9-48b7-b70c-819482fb10fb-cover.png",
+          "credit":""
         },
         {
           "result": "C",
           "text": "result text",
-          "image": "https://s3-alpha.figma.com/hub/file/948140848/1f4d8ea7-e9d9-48b7-b70c-819482fb10fb-cover.png"
+          "image": "https://s3-alpha.figma.com/hub/file/948140848/1f4d8ea7-e9d9-48b7-b70c-819482fb10fb-cover.png",
+          "credit":""
         },
         {
           "result": "D",
           "text": "result text",
-          "image": "https://s3-alpha.figma.com/hub/file/948140848/1f4d8ea7-e9d9-48b7-b70c-819482fb10fb-cover.png"
+          "image": "https://s3-alpha.figma.com/hub/file/948140848/1f4d8ea7-e9d9-48b7-b70c-819482fb10fb-cover.png",
+          "credit":""
         }
       ],
       "comments": [

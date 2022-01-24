@@ -56,7 +56,10 @@ a {
   vertical-align: middle;
   line-height: normal;
   color: #000000
+}
 
+.img-credit{
+  font-size: 9px; 
 }
 
 /*
@@ -145,7 +148,7 @@ background-color: #ffffffcc;
 
 .question-answer-holder{
   clear: both;
-  width: 350px;
+  width: 400px;
   margin: auto;
 
 }
@@ -176,7 +179,7 @@ background-color: #ffffffcc;
 }
 
 .other-questions-options {
-  width: 100px; 
+  width: 90px; 
   min-height: 100px; 
   margin: 5px; 
   background-color: #04C4D966; 
@@ -185,7 +188,7 @@ background-color: #ffffffcc;
 }
 
 .current-question-options {
-  width: 100px; 
+  width: 90px; 
   min-height: 100px; 
   margin: 5px; 
   color: #F2F2F2; 

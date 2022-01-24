@@ -6,6 +6,7 @@ function Result ({finalResult}) {
         <h2>Your Result:</h2>
         <h3>{finalResult.result}</h3>
         <p>{finalResult.text}</p>
+        <p className="img-credit">{finalResult.credit}</p>
         </div>
     )
 

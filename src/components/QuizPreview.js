@@ -13,6 +13,7 @@ function QuizPreview({quiz}){
               <div className="quiz-preview" style={style}>
                 <div className="preview-textbox">
                   <h3>{quiz.title}</h3>
+                  <p className="img-credit">{quiz.imagecredit}</p>
                 </div> 
               </div>
              </Link>
