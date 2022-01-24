@@ -58,7 +58,10 @@ function Quiz ({q}){
             body: JSON.stringify(patchObj)
         })
             .then(resp => resp.json())
-            .then(data => setQuiz(data))
+            .then(data => {
+                setUserName("");
+                setCommentText("");
+                setQuiz(data)})
     }
     
 
@@ -85,7 +88,7 @@ function Quiz ({q}){
                 <input type="text" value={userName} onChange={(e)=> setUserName(e.target.value)}></input>
                 <br /><br />
                 <label>comment </label>
-                <textarea onChange={(e)=>setCommentText(e.target.value)}/>
+                <textarea value={commentText} onChange={(e)=>setCommentText(e.target.value)}/>
                 <br />
                 <input type="submit" />
             </form>
