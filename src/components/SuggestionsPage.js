@@ -31,7 +31,13 @@ function SuggestionsPage(){
                 setSugText("")
                 setUpdater(!updater)
             })
+    }
 
+    function deleteSug(id){
+        fetch(`http://localhost:4000/suggestions/${id}`,{
+            method: "DELETE"
+        })
+            .then(setUpdater(!updater))
     }
         
     return (
@@ -50,7 +56,7 @@ function SuggestionsPage(){
                 <input type ="submit"></input>
             </form>
 
-              {suggestions.map( (s) => <Suggestion sug={s} key={s.id} /> )}  
+              {suggestions.map( (s) => <Suggestion sug={s} key={s.id} onDelete={deleteSug}/> )}  
              
 
 
