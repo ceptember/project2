@@ -214,6 +214,10 @@ background-color: #ffffffcc;
   height: 150px; 
 }
 
+#suggest-user {
+  width: 200px; 
+}
+
 .suggestion{
   width: 300px; 
   padding: 20px; 
@@ -221,12 +225,17 @@ background-color: #ffffffcc;
   border-radius: 5px; 
   margin: auto; 
   margin-top: 10px; 
-  margin-bottom: 10px; 
-  text-align: center; 
+  margin-bottom: 10px;  
   background-color: #fff;
 }
 
+.suggestion p {
+  margin-top: 0px; 
+}
 
+.suggestion h4 {
+  margin: 0px; 
+}
 /*
 COLORS
 

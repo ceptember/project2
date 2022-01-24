@@ -47,7 +47,7 @@ function SuggestionsPage(){
             <form id="suggest-form" onSubmit={handleSug}>
                 <label>Username: </label>
                 <br />
-                <input type="text" value={userName} onChange={(e)=>setUserName(e.target.value)}/> 
+                <input id="suggest-user" type="text" value={userName} onChange={(e)=>setUserName(e.target.value)}/> 
                 <br /> 
                 <label>Comment: </label> 
                 <br />

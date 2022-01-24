@@ -4,8 +4,8 @@ function Suggestion ({sug, onDelete}){
 
     return (
         <div className="suggestion"> 
-            <button onClick={()=>onDelete(sug.id)}>x</button>
-            <h4>{sug.user}</h4>
+            
+            <h4><button onClick={()=>onDelete(sug.id)}>x</button> {sug.user}</h4>
             <p>{sug.suggestion}</p>
             <br /><br />
         </div>
