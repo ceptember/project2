@@ -46,25 +46,25 @@
       "results": [
         {
           "result": "San Francisco",
-          "text": "result text",
+          "text": "You'd feel right at home in San Francisco!",
           "image": "https://images.unsplash.com/photo-1501594907352-04cda38ebc29",
           "credit": "mvdheuvel"
         },
         {
           "result": "Seattle",
-          "text": "result text",
+          "text": "You belong in the beutiful Pacific Northwest!",
           "image": "https://images.unsplash.com/photo-1502175353174-a7a70e73b362",
           "credit": "thommilkovic"
         },
         {
           "result": "Austin",
-          "text": "result text",
+          "text": "Warm weather, trendy food, and music- you belong in Austin!",
           "image": "https://images.unsplash.com/photo-1588993608283-7f0eda4438be",
           "credit":"mitchkmetz"
         },
         {
           "result": "New York",
-          "text": "result text",
+          "text": "You belong in the city that never sleeps!",
           "image": "https://images.unsplash.com/photo-1518235506717-e1ed3306a89b",
           "credit":"mikechv"
         }
