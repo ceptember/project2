@@ -60,6 +60,7 @@ function Quiz ({q}){
             .then(data => setQuiz(data))
     }
     
+
     return (
         <div id="quiz-component">
             <h2>{quiz.title}</h2>

@@ -108,6 +108,16 @@ background-color: #ffffffcc;
   background-color: #F2522E;
   color: white; 
   border-radius: 5px;
+  text-align: center; 
+}
+
+.footer-link {
+  color: white; 
+}
+
+#footer p {
+  margin: 0px; 
+  font-size: 10pt; 
 }
 
 #search {
@@ -130,7 +140,6 @@ background-color: #ffffffcc;
   margin: auto;
   text-align: center; 
 }
-
 
 
 .question-answer-holder{

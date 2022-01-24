@@ -57,8 +57,6 @@ function SuggestionsPage(){
             </form>
 
               {suggestions.map( (s) => <Suggestion sug={s} key={s.id} onDelete={deleteSug}/> )}  
-             
-
 
         </div>
 
