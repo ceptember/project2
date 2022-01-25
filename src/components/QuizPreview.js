@@ -15,7 +15,7 @@ function QuizPreview({quiz}){
             <Link className='link' to={"/"+quiz.id} >
               <div className="quiz-preview" style={style}>
                 <div className="preview-textbox">
-                  <h3>{quiz.title}</h3>
+                  <span className="quiz-title"><h3>{quiz.title}</h3></span>
                   <span className="img-credit">Photo by <a target="_blank" href={"https://unsplash.com/@"+quiz.imagecredit}> @{quiz.imagecredit}</a> for Unsplash</span>
                   
                 </div> 
