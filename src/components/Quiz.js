@@ -68,6 +68,7 @@ function Quiz ({q}){
     return (
         <div id="quiz-component">
             <h2>{quiz.title}</h2>
+            <img src ={quiz.image} width="300px" />
 
 
             {quiz.questions.map( x => { 
