@@ -162,27 +162,43 @@ background-color: #ffffffcc;
 
 .results-div{
   clear:both;
-  width: 350px;
+  width: 400px;
   margin: auto;
-  height: 200px; 
+  height: 225px; 
   text-align:center;
-  border: 1px solid white; 
+  color:white; 
+}
+
+.results-textbox{
+  padding-top: 10px;
+  width: 400px;
+  height: 215px;
+  background-color: #00000044;
+}
+
+.results-div h2 {
+  margin:5px;
+  color: white;
 }
 
 .other-questions {
-  min-height: 100px; 
+  height: 80px; 
   width: 100%; 
   background-color: #04C4D966;
   border-radius: 5px; 
-  margin-top: 15px; 
+  margin-top: 35px; 
+  color: #F2F2F2; 
+  padding-top:40px
 }
 
 .current-question {
-  min-height: 100px; 
+  height: 80px; 
   width: 100%; 
   background-color: #04C4D9;
   border-radius: 5px; 
-  margin-top: 15px; 
+  margin-top: 35px; 
+  color: #F2F2F2; 
+  padding-top: 40px;
 }
 
 .other-questions-options {
