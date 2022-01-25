@@ -4,7 +4,7 @@
       "id": 1,
       "title": "Which Tech Hub is your Dream City?",
       "image": "https://images.unsplash.com/photo-1623101275026-9eb1e7b4d5df?ixlib",
-      "imagecredit" : "Photo by <a href='https://unsplash.com/@hpj1992'>Harshit Joshi</a> for Unsplash",
+      "imagecredit": "hpj1992",
       "questions": [
         {
           "question": "What kind of weather do you like?",
@@ -60,13 +60,13 @@
           "result": "Austin",
           "text": "Warm weather, trendy food, and music- you belong in Austin!",
           "image": "https://images.unsplash.com/photo-1588993608283-7f0eda4438be",
-          "credit":"mitchkmetz"
+          "credit": "mitchkmetz"
         },
         {
           "result": "New York",
           "text": "You belong in the city that never sleeps!",
           "image": "https://images.unsplash.com/photo-1518235506717-e1ed3306a89b",
-          "credit":"mikechv"
+          "credit": "mikechv"
         }
       ],
       "comments": [
@@ -123,25 +123,25 @@
           "result": "Dolphin",
           "text": "You are highly intellegent, yet restless. You think differently and have the makings of a great inventor. You may be a perfectionist, but try not to get too upset when others don't live up to your standards.",
           "image": "https://images.unsplash.com/photo-1570481662006-a3a1374699e8",
-          "credit":"aberkecz"
+          "credit": "aberkecz"
         },
         {
           "result": "Lion",
           "text": "You are a born leader and the first one to arrive at work to rally your team. Remember to pace yourself to avoid burnout.",
           "image": "https://images.unsplash.com/photo-1552410260-0fd9b577afa6",
-          "credit":"mikabr"
+          "credit": "mikabr"
         },
         {
           "result": "Bear",
           "text": "You are well-rounded and pretty good at many different things. You're also an easygoing, agreeable member of your team, as long as you have enough rest and self-care. Remember not to neglect these things!",
           "image": "https://images.unsplash.com/photo-1568162603664-fcd658421851",
-          "credit":"binkabonka"
+          "credit": "binkabonka"
         },
         {
           "result": "Wolf",
           "text": "Smart, creative, and independent, you come up with some of the best ideas for your team. You do your best work alone, ususally at night, but don't forget to make time for others once in a while!",
           "image": "https://images.unsplash.com/photo-1607350999170-b893fef057ea",
-          "credit":"miloweiler"
+          "credit": "miloweiler"
         }
       ],
       "comments": [
@@ -176,97 +176,199 @@
         {
           "comment": "this really did nail me",
           "user": "a user"
+        },
+        {
+          "comment": "7ry7uryu67de347e8ruder87eruif",
+          "user": "cooper"
         }
       ]
     },
     {
       "id": 3,
-      "title": "More Quiz fun?",
-      "image": "https://images.unsplash.com/photo-1613769049987-b31b641f25b1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=867&q=80",
-      "imagecredit": "",
+      "title": "What should you have for dinner?",
+      "image": "https://images.unsplash.com/photo-1520869578617-557561d7b114?ixlib=rb-1.2.1",
+      "imagecredit": "hannahbusing",
       "questions": [
         {
-          "question": "What is the first thing?",
+          "question": "How hungry are you?",
           "answers": [
-            "a-ish",
-            "b-ish",
-            "c-ish",
-            "d-ish"
+            "Very",
+            "Not Really",
+            "Somewhat",
+            "I think I will be later"
           ]
         },
         {
-          "question": "What is the second thing?",
+          "question": "How busy are you?",
           "answers": [
-            "eey",
-            "bee",
-            "sea",
-            "dee"
+            "Totally swamped",
+            "Starting to get busy",
+            "I'm caught up",
+            "I have work to do, but I need a break"
           ]
         },
         {
-          "question": "What is the third thing?",
+          "question": "How's the weather?",
           "answers": [
-            "the a one",
-            "the b one",
-            "the c one",
-            "the d one"
+            "A little gloomy",
+            "Rain or snow",
+            "Beautiful",
+            "Cold"
+          ]
+        },
+        {
+          "question": "How tired are you?",
+          "answers": [
+            "Very",
+            "A little",
+            "Not really",
+            "Wide awake"
           ]
         }
       ],
       "results": [
         {
-          "result": "A",
+          "result": "Order Pizza",
           "text": "result text",
-          "image": "https://s3-alpha.figma.com/hub/file/948140848/1f4d8ea7-e9d9-48b7-b70c-819482fb10fb-cover.png",
-          "credit": ""
+          "image": "https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?ixlib=rb-1.2.1",
+          "credit": "alanaktion"
         },
         {
-          "result": "B",
+          "result": "Instant Ramen",
           "text": "result text",
-          "image": "https://s3-alpha.figma.com/hub/file/948140848/1f4d8ea7-e9d9-48b7-b70c-819482fb10fb-cover.png",
-          "credit":""
+          "image": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624",
+          "credit": "mab_studio"
         },
         {
-          "result": "C",
+          "result": "Go out for tacos",
           "text": "result text",
-          "image": "https://s3-alpha.figma.com/hub/file/948140848/1f4d8ea7-e9d9-48b7-b70c-819482fb10fb-cover.png",
-          "credit":""
+          "image": "https://images.unsplash.com/photo-1615870216519-2f9fa575fa5c",
+          "credit": "jarettlopez"
         },
         {
-          "result": "D",
+          "result": "Make a Casserole",
           "text": "result text",
-          "image": "https://s3-alpha.figma.com/hub/file/948140848/1f4d8ea7-e9d9-48b7-b70c-819482fb10fb-cover.png",
-          "credit":""
+          "image": "https://images.unsplash.com/photo-1546453570-d2fcacdafbb2",
+          "credit": "sheri_silver"
         }
       ],
       "comments": [
         {
-          "comment": "OMG so accurate!",
+          "comment": "Whoa, I really do want tacos!",
           "user": "user1"
-        },
-        {
-          "comment": "no, I am not really a golden retriever",
-          "user": "user"
-        },
-        {
-          "comment": "that is totally me!",
-          "user": "user333"
-        },
-        {
-          "comment": "defg",
-          "user": "abc"
-        },
-        {
-          "comment": "b",
-          "user": "a"
         }
+     
+      ]
+    },
+    {
+      "id": 4,
+      "title": "What color should you use in your next design?",
+      "image": "https://images.unsplash.com/photo-1545231097-cbd796f1d95f",
+      "imagecredit": "steve_j",
+      "questions": [
+        {
+          "question": "What's the mood?",
+          "answers": [
+            "Exciting", 
+            "Confident", 
+            "Happy",
+            "Restorative",
+            "Relaxing",
+            "Off-beat",
+            "Youthful",
+            "Serious"
+          ]
+        },
+        {
+          "question": "What was the main color in your last design?",
+          "answers": [
+            "Green", 
+            "Blue",
+            "Purple", 
+            "Red", 
+            "Orange",
+            "Yellow",
+            "Black",
+            "Pink"
+          ]
+        },
+        {
+          "question": "What is your favorite color?",
+          "answers": [
+            "Red",
+            "Orange",
+            "Yellow",
+            "Green",
+            "Blue",
+            "Purple",
+            "Pink",
+            "Black"
+          ]
+        }
+      ],
+      "results": [
+        {
+          "result": "Red",
+          "text": "",
+          "image": "https://images.unsplash.com/photo-1519181245277-cffeb31da2e3",
+          "credit": "hngstrm"
+        },
+        {
+          "result": "Orange",
+          "text": "",
+          "image": "https://images.unsplash.com/photo-1582979512210-99b6a53386f9",
+          "credit": "vinomamba24"
+        },
+        {
+          "result": "Yellow",
+          "text": "",
+          "image": "https://images.unsplash.com/photo-1513754934927-4606bafe9858",
+          "credit": "simplelovelyuseful"
+        },
+        {
+          "result": "Green",
+          "text": "",
+          "image": "https://images.unsplash.com/photo-1497250681960-ef046c08a56e",
+          "credit": "xteemu"
+        },
+        {
+          "result": "Blue",
+          "text": "",
+          "image": "https://images.unsplash.com/photo-1578070181910-f1e514afdd08",
+          "credit": "steve_j"
+        },
+        {
+          "result": "Purple",
+          "text": "",
+          "image": "https://images.unsplash.com/photo-1511447333015-45b65e60f6d5",
+          "credit": "sandrokatalina"
+        },
+        {
+          "result": "Pink",
+          "text": "",
+          "image": "https://images.unsplash.com/photo-1555988776-c3f17e5cb789",
+          "credit": "chandler55"
+        },
+        {
+          "result": "Black & White",
+          "text": "",
+          "image": "https://images.unsplash.com/photo-1487766036723-04aebf785670",
+          "credit": "aliarifsoydas"
+        }
+      ],
+      "comments": [
+        {
+          "comment": "oooh I love it!",
+          "user": "user1"
+        }
+     
       ]
     }
   ],
   "suggestions": [
     {
-      "user": "user1",
-      "suggestion": "need more quizzes",
+      "user": "ilovequizzes",
+      "suggestion": "which space cat are you",
       "id": 1
     }
   ]

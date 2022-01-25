@@ -16,9 +16,10 @@ function QuizPreview({quiz}){
               <div className="quiz-preview" style={style}>
                 <div className="preview-textbox">
                   <h3>{quiz.title}</h3>
+                  <span className="img-credit">Photo by <a target="_blank" href={"https://unsplash.com/@"+quiz.imagecredit}> @{quiz.imagecredit}</a> for Unsplash</span>
                   
                 </div> 
-                <span className="img-credit">{quiz.imagecredit}</span>
+                
               </div>
              </Link>
           
