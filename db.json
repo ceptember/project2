@@ -203,25 +203,25 @@
       "results": [
         {
           "result": "Order Pizza",
-          "text": "result text",
+          "text": "We know you're craving pizza right now!",
           "image": "https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?ixlib=rb-1.2.1",
           "credit": "alanaktion"
         },
         {
           "result": "Instant Ramen",
-          "text": "result text",
+          "text": "We know you're craving ramen right now!",
           "image": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624",
           "credit": "mab_studio"
         },
         {
           "result": "Go out for tacos",
-          "text": "result text",
+          "text": "We know you're craving tacos right now!",
           "image": "https://images.unsplash.com/photo-1615870216519-2f9fa575fa5c",
           "credit": "jarettlopez"
         },
         {
           "result": "Make a Casserole",
-          "text": "result text",
+          "text": "Why don't you make a delicous casserole?",
           "image": "https://images.unsplash.com/photo-1546453570-d2fcacdafbb2",
           "credit": "sheri_silver"
         }
