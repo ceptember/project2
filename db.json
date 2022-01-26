@@ -81,6 +81,10 @@
         {
           "comment": "Uh... no.",
           "user": "user3"
+        },
+        {
+          "comment": "so cool!",
+          "user": "newUser"
         }
       ]
     },
@@ -145,7 +149,6 @@
         }
       ],
       "comments": [
-   
         {
           "comment": "Wow brilliant!!",
           "user": "user2"
@@ -153,8 +156,15 @@
         {
           "comment": "No way, I'm totally an emu",
           "user": "user3"
+        },
+        {
+          "comment": "test comment\n",
+          "user": "test user"
+        },
+        {
+          "comment": "another test",
+          "user": "another test"
         }
-       
       ]
     },
     {
@@ -230,8 +240,11 @@
         {
           "comment": "Whoa, I really do want tacos!",
           "user": "user1"
+        },
+        {
+          "comment": "test",
+          "user": "test"
         }
-     
       ]
     },
     {
@@ -243,8 +256,8 @@
         {
           "question": "What's the mood?",
           "answers": [
-            "Exciting", 
-            "Confident", 
+            "Exciting",
+            "Confident",
             "Happy",
             "Restorative",
             "Relaxing",
@@ -256,10 +269,10 @@
         {
           "question": "What was the main color in your last design?",
           "answers": [
-            "Green", 
+            "Green",
             "Blue",
-            "Purple", 
-            "Red", 
+            "Purple",
+            "Red",
             "Orange",
             "Yellow",
             "Black",
@@ -335,7 +348,6 @@
           "comment": "oooh I love it!",
           "user": "user1"
         }
-     
       ]
     }
   ],

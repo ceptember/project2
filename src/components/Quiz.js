@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import Comment from './Comment';
 import Result from './Result'
 
-function Quiz ({q}){
+function Quiz ({q, updateQuizzes}){
     // Order matters, the index of the option is the index of the corresponding result! 
    
     const [scoreSheet, setScoreSheet] = useState({})
@@ -61,7 +61,9 @@ function Quiz ({q}){
             .then(data => {
                 setUserName("");
                 setCommentText("");
-                setQuiz(data)})
+                setQuiz(data);
+                updateQuizzes(data);
+            } )
     }
     
 

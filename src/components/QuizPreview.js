@@ -6,13 +6,13 @@ function QuizPreview({quiz}){
    backgroundImage: 'url(' + quiz.image + ')',
    
    // **** Why doesn't this filepath work?? 
-   //backgroundImage: 'url(/src/img/NYC.jpg)',
+   //backgroundImage: 'url("../img/NYC.jpg")',
     backgroundSize: '100%',
   };
     return (
 
         <div >
-            <Link className='link' to={"/"+quiz.id} >
+            <Link className='link' to={"/quizzes/"+quiz.id} >
               <div className="quiz-preview" style={style}>
                 <div className="preview-textbox">
                   <div className="preview-text">
