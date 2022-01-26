@@ -41,7 +41,7 @@ function Quiz ({q, updateQuizzes}){
         setFinalResult(quiz.results[winners[0]]) //
     }
 
-    //might need to move this up to parent
+    
     function handleSubmit(e){
 
         const patchObj = {
