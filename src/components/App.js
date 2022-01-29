@@ -6,7 +6,7 @@ import SuggestionsPage from './SuggestionsPage';
 import Search from './Search.js';
 import Footer from './Footer.js'
 import { Route, Switch } from "react-router-dom";
-//import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
 
@@ -15,7 +15,6 @@ function App() {
   const [updater, setUpdater] = useState(false);
 
   useEffect(()=>{
-    console.log("quizzes loaded")
     fetch('http://localhost:4000/quizzes')
         .then(resp => resp.json())
         .then(data => {

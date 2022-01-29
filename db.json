@@ -244,6 +244,18 @@
         {
           "comment": "test",
           "user": "test"
+        },
+        {
+          "comment": "my comment",
+          "user": "me"
+        },
+        {
+          "comment": "great quiz!",
+          "user": "me"
+        },
+        {
+          "comment": "great quiz!!",
+          "user": "user"
         }
       ]
     },
@@ -353,9 +365,19 @@
   ],
   "suggestions": [
     {
-      "user": "ilovequizzes",
-      "suggestion": "which space cat are you",
+      "user": "me",
+      "suggestion": "I'd like a quiz about dogs",
       "id": 1
+    },
+    {
+      "user": "user1",
+      "suggestion": "I want to know what cat I am!",
+      "id": 2
+    },
+    {
+      "user": "user",
+      "suggestion": "I want a quiz about llamas",
+      "id": 3
     }
   ]
 }
