@@ -12,7 +12,7 @@ function SuggestionsPage(){
         fetch('http://localhost:4000/suggestions')
             .then(resp => resp.json())
             .then(data => setSuggestions(data))
-        }, [updater])
+        }, [])
     
     function handleSug(e){
         e.preventDefault(); 
@@ -27,9 +27,11 @@ function SuggestionsPage(){
             .then(resp => resp.json())
             .then(data => {
                 console.log(data);
+                const sug = [...suggestions, data]
                 setUserName("");
                 setSugText("")
                 setUpdater(!updater)
+                setSuggestions(sug)
             })
     }
 

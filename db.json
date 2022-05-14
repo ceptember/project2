@@ -164,6 +164,10 @@
         {
           "comment": "another test",
           "user": "another test"
+        },
+        {
+          "comment": "great quiz!",
+          "user": "user"
         }
       ]
     },
@@ -370,13 +374,13 @@
       "id": 1
     },
     {
-      "user": "user1",
-      "suggestion": "I want to know what cat I am!",
+      "user": "test",
+      "suggestion": "test",
       "id": 2
     },
     {
-      "user": "user",
-      "suggestion": "I want a quiz about llamas",
+      "user": "test2",
+      "suggestion": "test2",
       "id": 3
     }
   ]
