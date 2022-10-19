@@ -1,15 +1,12 @@
 import React, {useState} from 'react'; 
-import Comment from './Comment';
 import Result from './Result'
 
-function Quiz ({q, updateQuizzes}){
+function Quiz ({q}){
     // Order matters, the index of the option is the index of the corresponding result! 
    
     const [scoreSheet, setScoreSheet] = useState({})
-    const [finalResult, setFinalResult] = useState({}) //change to obj
-    const [userName, setUserName] = useState(""); 
-    const [commentText, setCommentText] = useState("")
-
+    const [finalResult, setFinalResult] = useState({}) 
+   
     const [quiz, setQuiz] = useState(q); 
 
     const [questionsCompleted, setQuestionsCompleted] = useState(-1);
@@ -42,35 +39,11 @@ function Quiz ({q, updateQuizzes}){
     }
 
     
-    function handleSubmit(e){
-
-        const patchObj = {
-            comments: [...quiz.comments, {
-                comment: commentText,
-                user: userName 
-            }]
-        }
-
-        e.preventDefault(); 
-        fetch(`http://localhost:4000/quizzes/${quiz.id}`, {
-            method: 'PATCH', 
-            headers: {"Content-Type":"application/json"},
-            body: JSON.stringify(patchObj)
-        })
-            .then(resp => resp.json())
-            .then(data => {
-                setUserName("");
-                setCommentText("");
-                setQuiz(data);
-                updateQuizzes(data);
-            } )
-    }
-    
 
     return (
         <div id="quiz-component">
             <h2>{quiz.title}</h2>
-            <img src ={quiz.image} width="300px" />
+            <img src ={quiz.image} class="quiz-image" />
 
 
             {quiz.questions.map( x => { 
@@ -84,21 +57,10 @@ function Quiz ({q, updateQuizzes}){
             { finalResult.result ? <Result finalResult={finalResult}/> : ""}    
 
             <br />
+            
             <div id="comments-section">
-            <h2>What do you think!?</h2>
-            <form onSubmit={handleSubmit}>
-                <label>username </label>
-                <input type="text" value={userName} onChange={(e)=> setUserName(e.target.value)}></input>
-                <br /><br />
-                <label>comment </label>
-                <textarea value={commentText} onChange={(e)=>setCommentText(e.target.value)}/>
-                <br />
-                <input type="submit" />
-            </form>
-
-            <h2>Comments:</h2>
-            {quiz.comments.map( com => <Comment key={com.comment} com={com} /> )}
             </div>
+
         </div>
 
 
@@ -108,7 +70,3 @@ function Quiz ({q, updateQuizzes}){
 
 export default Quiz; 
 
-
-
-
-// test

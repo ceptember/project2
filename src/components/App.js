@@ -9,25 +9,19 @@ import { Route, Switch } from "react-router-dom";
 function App() {
 
   const [quizzes, setQuizzes] = useState([]);
-  const [quizzesToShow, setQuizzesToShow] = useState([]); 
-  const [updater, setUpdater] = useState(false); //Get rid of 
+  const  [quizzesToShow, setQuizzesToShow] = useState([]); 
 
   useEffect(()=>{
-    fetch('http://localhost:4000/quizzes')
+    fetch('https://my-json-server.typicode.com/ceptember/quiz-demo-data/quizzes')
         .then(resp => resp.json())
         .then(data => {
           setQuizzes(data);
           setQuizzesToShow(data)})
-}, [updater]); //rid of updater
-
-//get rid 
-  function updateQuizzes(quiz){
-    setUpdater(!updater);
-  }
+}, []);
 
   function searchHandler(term){
     let arr= quizzes.filter( q => q.title.toLowerCase().includes(term.toLowerCase()))
-    setQuizzesToShow(arr) 
+    setQuizzesToShow(arr)
   }
 
   return (
@@ -38,19 +32,17 @@ function App() {
 
         {quizzesToShow.map((q)=> {return(
                   <Route path={"/quizzes/"+q.id} key={q.id}>
-                  <Quiz updateQuizzes={updateQuizzes} q={q} />
+                  <Quiz q={q} />
                   </Route>
         )})}
 
           {/* home page shows list of quizzes*/}
         <Route exact path="/">
         <Search  onSearch={searchHandler}/>  
-        <QuizList quizzes={quizzesToShow} updateQuizzes={updateQuizzes}/>
+        <QuizList quizzes={quizzesToShow} />
         </Route>
 
         </Switch>
-
-
         <Footer />
     
     </div>
@@ -58,4 +50,5 @@ function App() {
 }
 
 export default App;
+
 

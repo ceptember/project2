@@ -4,7 +4,8 @@
 
 body {
   margin: 0;
-  padding-left: 10px; 
+  padding-left: 1px; 
+  padding-right: 1px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -20,7 +21,7 @@ body {
 }
 
 h1 {
-  font-size: 50pt; 
+  font-size: 41pt; 
 }
 
  h1 a {
@@ -76,7 +77,7 @@ a {
   border-radius: 5px;
   margin: 15px;
   height: 150px; 
-  width: 500px; 
+  width: 350px; 
   font-size: 20px; 
   text-align:center; 
 }
@@ -85,7 +86,7 @@ a {
 height: 130px; 
 line-height: 150px;
 margin-top: 10px; 
-width: 480px; 
+width: 330px; 
 margin-left: 10px;    
 background-color: #ffffffcc; 
 }
@@ -127,6 +128,7 @@ background-color: #ffffffcc;
 #footer p {
   margin: 0px; 
   font-size: 10pt; 
+  
 }
 
 #search {
@@ -147,32 +149,39 @@ background-color: #ffffffcc;
 */
 
 #quiz-component {
-  width: 75%;
+  
   margin: auto;
   text-align: center; 
+  
 }
 
+.quiz-image{
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 5px;
+  
+}
 
 .question-answer-holder{
   clear: both;
-  width: 400px;
+  width: 350px;
   margin: auto;
-
 }
 
 .results-div{
   clear:both;
-  width: 400px;
+  width: 350px;
   margin: auto;
-  height: 225px; 
+  height: 200px; 
   text-align:center;
   color:white; 
 }
 
 .results-textbox{
   padding-top: 10px;
-  width: 400px;
-  height: 215px;
+  width: 350px;
+  height: 190px;
   background-color: #00000044;
 }
 
@@ -183,7 +192,7 @@ background-color: #ffffffcc;
 
 .other-questions {
   height: 80px; 
-  width: 100%; 
+  width: 350px; 
   background-color: #04C4D966;
   border-radius: 5px; 
   margin-top: 35px; 
@@ -193,7 +202,7 @@ background-color: #ffffffcc;
 
 .current-question {
   height: 80px; 
-  width: 100%; 
+  width: 350px; 
   background-color: #04C4D9;
   border-radius: 5px; 
   margin-top: 35px; 
@@ -202,21 +211,26 @@ background-color: #ffffffcc;
 }
 
 .other-questions-options {
-  width: 90px; 
-  min-height: 100px; 
+  width: 77px; 
+  min-height: 80px; 
   margin: 5px; 
   background-color: #04C4D966; 
   color: #F2F2F2; 
   float: left; 
+  border-radius: 3px;
+  font-size: 12pt;
 }
 
 .current-question-options {
-  width: 90px; 
-  min-height: 100px; 
+  width: 77px; 
+  min-height: 80px; 
   margin: 5px; 
   color: #F2F2F2; 
   float: left; 
   background-color: #04C4D9; 
+  border-radius: 3px;
+  font-size: 12pt;
+
 }
 
 .current-question-options:active{
@@ -225,7 +239,7 @@ background-color: #ffffffcc;
 
 
 #comments-section {
-  clear: both; 
+  clear: both
 }
 /*
 ***** SUGGESTION PAGE **** 
