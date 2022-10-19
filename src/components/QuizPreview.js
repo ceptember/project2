@@ -3,11 +3,8 @@ import { Link} from "react-router-dom";
 
 function QuizPreview({quiz}){
   const style = {
-   backgroundImage: 'url(' + quiz.image + ')',
-   
-   // **** Why doesn't this filepath work?? 
-   //backgroundImage: 'url("../img/NYC.jpg")',
-    backgroundSize: '100%',
+   backgroundImage: 'url(' + quiz.image + ')',  
+   backgroundSize: '100%',
   };
     return (
 

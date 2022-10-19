@@ -2,18 +2,15 @@ import React, {useState, useEffect} from 'react';
 import Quiz from './Quiz';
 import Header from './Header'
 import QuizList from './QuizList'
-import SuggestionsPage from './SuggestionsPage';
 import Search from './Search.js';
 import Footer from './Footer.js'
-import NewComponent from './NewComponent';
 import { Route, Switch } from "react-router-dom";
-
 
 function App() {
 
   const [quizzes, setQuizzes] = useState([]);
-  const  [quizzesToShow, setQuizzesToShow] = useState([]); 
-  const [updater, setUpdater] = useState(false);
+  const [quizzesToShow, setQuizzesToShow] = useState([]); 
+  const [updater, setUpdater] = useState(false); //Get rid of 
 
   useEffect(()=>{
     fetch('http://localhost:4000/quizzes')
@@ -21,16 +18,16 @@ function App() {
         .then(data => {
           setQuizzes(data);
           setQuizzesToShow(data)})
-}, [updater]);
+}, [updater]); //rid of updater
 
+//get rid 
   function updateQuizzes(quiz){
     setUpdater(!updater);
   }
 
   function searchHandler(term){
     let arr= quizzes.filter( q => q.title.toLowerCase().includes(term.toLowerCase()))
-    setQuizzesToShow(arr)
-    
+    setQuizzesToShow(arr) 
   }
 
   return (
@@ -51,13 +48,8 @@ function App() {
         <QuizList quizzes={quizzesToShow} updateQuizzes={updateQuizzes}/>
         </Route>
 
-        <Route path="/suggestions">
-          <SuggestionsPage />
-        </Route>
-
         </Switch>
 
-        <NewComponent />
 
         <Footer />
     
